@@ -2,8 +2,8 @@ from flask import Flask
 import os
 app = Flask(__name__)
 
-from core.views import core
-from error_pages.handlers import error_pages
+from companyblog.core.views import core
+from companyblog.error_pages.handlers import error_pages
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
